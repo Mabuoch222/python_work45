@@ -1,0 +1,18 @@
+#for positive pyramid
+choice=int(input("enter 1 for positive pyramid and 2 for negative pyramid"))
+if choice ==1:
+     n = int(input("Enter number of rows: "))
+     i = int(1)
+     while n != 0:
+         print("* "*i, "\n")
+         i += 2
+         n -= 1
+#for negative pyramid        
+elif choice ==2:
+    l = True
+    while l == True: 
+        n = int(input("Enter number of rows: "))
+        while n != 0:
+            print("* "*(2*n - 1))
+            n -= 1
+            
